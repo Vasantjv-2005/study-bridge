@@ -58,8 +58,8 @@ type Store = {
 const initial: BoardState = {
   elements: [],
   camera: {
-    x: window?.innerWidth ? window.innerWidth / 2 : 0,
-    y: window?.innerHeight ? window.innerHeight / 2 : 0,
+    x: 0,
+    y: 0,
     z: 1,
   },
 }

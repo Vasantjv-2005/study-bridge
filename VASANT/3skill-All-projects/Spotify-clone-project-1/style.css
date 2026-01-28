@@ -1,0 +1,368 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer styles */
+.fotter-section {
+  padding: 30px 40px;
+  background: #121212;
+}
+
+.fotter-section .fotter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  border-bottom: 1px solid #2a2a2a; /* divider under footer */
+  padding-bottom: 24px;
+}
+
+.fotter-section .fotter .fotter-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.fotter-section .fotter .fotter-links .fotter-column div {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.fotter-section .fotter .fotter-links .col-links li {
+  margin: 8px 0;
+}
+
+.fotter-section .fotter .fotter-links .col-links a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.fotter-section .fotter .fotter-links .col-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-links i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2a2a;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.social-links i:hover {
+  background: #3a3a3a;
+}
+
+@media (max-width: 900px) {
+  .fotter-section .fotter {
+    flex-direction: column;
+  }
+  .social-links {
+    margin-top: 12px;
+  }
+}
+body{
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar{
+  width: 300px;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.sidebar-nav{
+  background: #111111;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+.sidebar-nav .logo{
+  width: 120px;
+}
+.sidebar-nav .logo img{
+  width: 100%;
+}
+.sidebar-nav ul{
+  list-style: none;
+
+}
+.sidebar-nav ul li{
+  padding: 10px 20px;
+}
+.sidebar-nav ul li a:hover{
+  color: #fff;
+}
+.sidebar-nav ul li a{
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 16px;
+  font-weight: ;
+}
+.sidebar-nav ul li a i{
+ font-size: 20px;
+ margin-right: 10px;
+}
+.libary::after{
+  content: '+';
+  float: right;
+  text-align: center;
+  background: #1f1e1e;
+  
+  border-radius: 50%;
+  font-size: 15px;
+}
+.create-playlist{
+  background: #302f2f;
+  padding: 30px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.sidebar-scroll{
+  height: 120px;
+  overflow-y: auto;
+
+}
+.sidebar-scroll::-webkit-scrollbar{
+   background: transparent;
+
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+   background: transparent;
+   width: 10px;
+   
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+   background: #ccc;
+   width: 10px;
+   
+}
+.create-playlist h4{
+  color: #fff;
+  font-size: 15px;
+}
+.create-playlist p{
+  color: #fff;
+  font-size: 12px;
+  margin: 12px 0px;
+}
+.create-playlist button{
+  padding: 8px 15px;
+  border:0;
+  outline: 0;
+  border-radius: 20px;
+  font-weight: 600 ;
+  margin-bottom: 10px;
+}
+.privacy ul li a{
+  text-decoration: none;
+  color: #818080;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 6px;
+
+}
+.privacy ul li a:hover{
+ text-decoration: underline;
+ color: #dbdada;
+
+}
+.privacy ul{
+  list-style: none;
+  margin-top: 20px;
+  
+}
+.privacy ul li{
+  padding: 0 12px;
+  padding-bottom: 8px;
+
+}
+.english{
+  padding: 20px 30px;
+}
+.english button{
+  padding: 10px 30px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  border: 1px solid #818080;
+  border-radius: 20px;
+}
+.english button:hover{
+  padding: 11px 31px;
+  border: 1px solid #fff ;
+
+}
+.main-section{
+  margin-left: 300px;
+  background: #181818;
+  height: 100vh;
+  overflow: auto;
+}
+.main-section .top-nav{
+  padding: 20px 30px;
+  background: #131212;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-section .top-nav button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.main-section .top-nav .prev-btn button i {
+  color: #838181;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.top-nav .login-btn .sign-up{
+  color: #838181;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 25px;
+
+}
+.top-nav .login-btn .sign-up:hover{
+  color: #ffffff;
+ 
+
+
+}
+.top-nav .login-btn .login {
+   color: #838181;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  
+}
+.top-nav .login-btn .login:hover {
+   background: #818080;
+  
+  
+}
+.spotify-playlist{
+  padding: 20px 40px;
+}
+.spotify-playlist h2{
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.spotify-playlist .card{
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+
+}
+.spotify-playlist .card .item{
+  width: 190px;
+  min-width: 140px;
+  background-color: #272626;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 15px;
+  position: relative;
+}
+.spotify-playlist .card .item:hover{
+  background-color: #3d3c3c;
+}
+.spotify-playlist .card .item img{
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+
+}
+.spotify-playlist .item h4{
+  color: #fff;
+  
+}
+.spotify-playlist .item p{
+  color: #8f8e8e;
+  font-size: 13px;
+  margin-top: 10px;
+
+}
+.spotify-playlist .item p:hover{
+  text-decoration: underline;
+
+}
+.spotify-playlist .play-btn{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: calc(100% - 30px);
+  aspect-ratio: 1 / 1;
+  pointer-events: none;
+}
+.spotify-playlist .play-btn i{
+  position: absolute;
+  background: #1db954;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: 18px;
+  color: #000;
+  right: 12px;
+  bottom: 12px;
+  opacity: 0;
+  transition: 0.3s ease all;
+}
+.spotify-playlist .card .item:hover .play-btn i{
+  opacity: 1;
+  transform: translateY(-6px);
+}
+.fotter-section{
+  padding:  20px 40px;
+
+}
+.fotter-section .fotter{
+  display: flex;
+  justify-content: space-between;
+  margin-top:  20px;
+  
+}
+.fotter-section .fotter .fotter-links .fotter-column{
+ margin: 0 12px;
+
+}
+.fotter-section .fotter .fotter-links div{
+ color: #fff;
+ font-weight: 600;
+ margin-bottom: 12px;
+ font-size: 16px;
+ 
+
+}
+.fotter-section .fotter .fotter-links ul{
+ list-style: none;
+ margin: 6px 0;
+
+}
+
